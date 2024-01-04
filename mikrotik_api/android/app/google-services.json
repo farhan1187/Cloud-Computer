@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "227706015278",
+    "firebase_url": "https://camp-fi-a2be7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "camp-fi-a2be7",
+    "storage_bucket": "camp-fi-a2be7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227706015278:android:be832ba0c11f2f887ed9bf",
+        "android_client_info": {
+          "package_name": "com.example.mikrotik_api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8VgK0-TWvthvN1_LKEiNOD4PuxA9EO0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
