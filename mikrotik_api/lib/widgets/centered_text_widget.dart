@@ -5,30 +5,13 @@ class CenteredTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.black, // Set the background color to black
       body: Center(
-        child: RichText(
-          text: const TextSpan(
-            children: [
-              TextSpan(
-                text: 'C-',
-                style: TextStyle(
-                  fontSize: 45,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              TextSpan(
-                text: 'FI',
-                style: TextStyle(
-                  fontSize: 45,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
-                ),
-              ),
-            ],
-          ),
+        child: Image(
+          image: AssetImage(
+              'assets/images/cfiimg.jpg'), // Replace with your image path
+          fit: BoxFit.cover, // Cover the entire screen
         ),
       ),
     );

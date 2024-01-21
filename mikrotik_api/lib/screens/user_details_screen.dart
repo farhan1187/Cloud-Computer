@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:intl/intl.dart';
+import 'package:mikrotik_api/services/reser_password.dart';
 import 'package:mikrotik_api/widgets/custom_button.dart';
 
 class ScreenUserDetails extends StatefulWidget {
@@ -72,7 +73,7 @@ class ScreenUserDetailsState extends State<ScreenUserDetails> {
                 onPressed: () {
                   // Implement reset password functionality
                   // This button can trigger a reset password action
-                  _resetPassword(context);
+                  PasswordReset.resetPassword(context, _email);
                 },
               ),
             )
@@ -108,32 +109,6 @@ class ScreenUserDetailsState extends State<ScreenUserDetails> {
           ),
         ],
       ),
-    );
-  }
-
-  void _resetPassword(BuildContext context) {
-    // Implement your password reset logic here
-    // For example, using FirebaseAuth:
-    FirebaseAuth.instance.sendPasswordResetEmail(email: _email);
-
-    // Show a dialog or message indicating that the password reset link has been sent.
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text('Password Reset'),
-          content:
-              const Text('A password reset link has been sent to your email.'),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              child: const Text('OK'),
-            ),
-          ],
-        );
-      },
     );
   }
 }

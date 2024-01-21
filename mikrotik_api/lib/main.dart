@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:mikrotik_api/screens/add_router_screen.dart';
 import 'package:mikrotik_api/screens/home_screen/home_screen.dart';
 import 'package:mikrotik_api/screens/list_of_routers_screen.dart';
+import 'package:mikrotik_api/screens/reset_password_screen.dart';
 import 'package:mikrotik_api/screens/screen_active_voucher/active_voucher_screen.dart';
 import 'package:mikrotik_api/screens/screen_generated_voucher/generated_voucher_screen.dart';
 import 'package:mikrotik_api/screens/screen_voucher_generator/voucher_generator_screen.dart';
@@ -60,6 +61,8 @@ class MyApp extends StatelessWidget {
         'Navigate_to_Subscription_Screen': (context) =>
             const subscibtion_screen(),
         'Navigate_to_SignUp_Screen': (context) => const SignUp(),
+        'Navigate_to_Reset_Password_Screen': (context) =>
+            const resetPasswordSceeen(),
       },
     );
   }

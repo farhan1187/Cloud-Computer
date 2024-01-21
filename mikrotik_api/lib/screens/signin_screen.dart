@@ -148,6 +148,18 @@ class _ScreenSignInState extends State<ScreenSignIn> {
                         TextButton(
                           onPressed: () {
                             Navigator.of(context)
+                                .pushNamed('Navigate_to_Reset_Password_Screen');
+                          },
+                          child: const Text(
+                            'Forgot your Password ?',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 167, 167, 167),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context)
                                 .pushNamed('Navigate_to_SignUp_Screen');
                           },
                           child: const Text(
